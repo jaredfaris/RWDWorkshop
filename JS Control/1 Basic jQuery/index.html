@@ -7,6 +7,7 @@
     <!--<link rel="stylesheet" href="css/bootstrap-theme.css">-->
 
     <!--<script src="js/bootstrap.js"></script>-->
+    <script src="js/jquery-1.11.1.min.js"></script>
 
     <style>
         .container {
@@ -61,16 +62,13 @@
 <body>
 
 <div class="container">
-    <form>
+    <form id="dslControlForm">
         <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-6">
                 <div class="dsl-control">
                     <div class="left-container">
                         <select multiple class="unselected-values">
-                            <option value="1">Value 1</option>
-                            <option value="2">Value 2</option>
-                            <option value="3">Value 3</option>
                         </select>
                     </div>
 
@@ -89,9 +87,6 @@
 
                     <div class="right-container">
                         <select multiple class="selected-values">
-                            <option value="4">Value 4</option>
-                            <option value="5">Value 5</option>
-                            <option value="6">Value 6</option>
                         </select>
                     </div>
                 </div>
@@ -111,5 +106,7 @@
     </form>
 
 </div>
+
+<script src="js/double-select-list.js"></script>
 </body>
 </html>
