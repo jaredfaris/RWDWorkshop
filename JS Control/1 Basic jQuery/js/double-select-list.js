@@ -37,8 +37,8 @@
     // all of this code would probably live in an ajax success callback
     var fakeResult = [
         {value: 1, name: "Value 1", selected: false},
-        {value: 2, name: "Value 3", selected: false},
-        {value: 3, name: "Value 2", selected: false},
+        {value: 2, name: "Value 2", selected: false},
+        {value: 3, name: "Value 3", selected: false},
         {value: 4, name: "Value 4", selected: true},
         {value: 5, name: "Value 5", selected: true},
         {value: 6, name: "Value 6", selected: true}
@@ -47,7 +47,7 @@
     fakeResult.forEach(function(item, index, array) {
         var newOption = $("<option></option>")
             .prop('value', item.value)
-            .text(item.name)
+            .text(item.name);
         if(item.selected) {
             $rightList.append(newOption);
         } else {
@@ -67,7 +67,7 @@
         });
         $rightList.find('option').each(function(index, element) {
             data.push({value: element.value, name: element.text, selected: true})
-        })
+        });
 
         console.log(data);
     })
