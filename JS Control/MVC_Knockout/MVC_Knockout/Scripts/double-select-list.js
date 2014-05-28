@@ -49,7 +49,6 @@
     });
 
     // send an updated JSON array when submit is hit
-    // NOTE pretending to do this. This would probably be an ajax call
     $control.on('submit', function (event) {
         event.preventDefault();
 
@@ -60,7 +59,5 @@
             data: JSON.stringify(ko.toJS(koViewModel).items),
             url: "/api/data/Update"
         });
-        
-        //console.log(ko.toJS(koViewModel).items);
     });
 })();
