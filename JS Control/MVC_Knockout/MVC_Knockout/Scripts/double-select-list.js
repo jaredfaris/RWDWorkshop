@@ -57,7 +57,10 @@
             dataType: "json",
             contentType: "application/json",
             data: JSON.stringify(ko.toJS(koViewModel).items),
-            url: "/api/data/Update"
+            url: "/api/data/Update",
+            success: function() {
+                alert('Saved!');
+            }
         });
     });
 })();
