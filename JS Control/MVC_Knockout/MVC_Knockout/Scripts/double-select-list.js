@@ -32,25 +32,35 @@
     });
 
     // load the initial data
-    // NOTE pretending we get back an array of key value pairs form some ajax call
-    // all of this code would probably live in an ajax success callback
-    var newItems = [
-        {value: 1, name: "Value 1", selected: ko.observable(false)},
-        {value: 2, name: "Value 2", selected: ko.observable(false)},
-        {value: 3, name: "Value 3", selected: ko.observable(false)},
-        {value: 4, name: "Value 4", selected: ko.observable(true)},
-        {value: 5, name: "Value 5", selected: ko.observable(true)},
-        {value: 6, name: "Value 6", selected: ko.observable(true)}
-    ];
-    koViewModel.items = ko.observableArray(newItems);
+    $.ajax({
+        url: "/api/data",
+        dataType: "json",
+        success: function (data) {
+            // map the data to KO
+            var newItems = _.map(data, function(item) {
+                return { value: item.Value, name: item.Name, selected: ko.observable(item.Selected) };
+            });
 
-    ko.applyBindings(koViewModel, document.getElementById("dslControlForm"));
+            // turn on the bindings
+            koViewModel.items = ko.observableArray(newItems);
+            ko.applyBindings(koViewModel, document.getElementById("dslControlForm"));
+
+        }
+    });
 
     // send an updated JSON array when submit is hit
     // NOTE pretending to do this. This would probably be an ajax call
-    $control.on('submit', function(event) {
+    $control.on('submit', function (event) {
         event.preventDefault();
 
-        console.log(ko.toJS(koViewModel).items);
-    })
+        $.ajax({
+            type: "POST",
+            dataType: "json",
+            contentType: "application/json",
+            data: JSON.stringify(ko.toJS(koViewModel).items),
+            url: "/api/data/Update"
+        });
+        
+        //console.log(ko.toJS(koViewModel).items);
+    });
 })();
