@@ -1,0 +1,27 @@
+.container {
+    /*width: 960px;*/
+    margin: 100px auto 0;
+}
+
+.filter-control label {
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+
+/* TODO talk about why you need this */
+.filter-control {
+    font-size: 0px;
+}
+
+.filter-control .left-container {
+    display: inline-block;
+    width: 30%;
+}
+
+.filter-control .right-container {
+    display: inline-block;
+    width: 70%;
+    font-size: 12px;
+    vertical-align: top;
+}
