@@ -1,0 +1,45 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1190" measuredH="693" mockupW="800" mockupH="600">
+  <controls>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="390" y="93" w="800" h="600" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>A%20Web%20Page%0Ahttp%3A//</text>
+      </controlProperties>
+    </control>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::Title" x="405" y="211" w="-1" h="-1" measuredW="166" measuredH="43" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Acme%20Co</text>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::SubTitle" x="405" y="254" w="-1" h="-1" measuredW="259" measuredH="27" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>We%20inventory%20your%20stuff%21</text>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::DataGrid" x="405" y="353" w="512" h="182" measuredW="424" measuredH="81" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Item%20%23%20%5E%2C%20Item%20Name%20%5Ev%2C%20Actual%20%23%2C%20System%20%23%2C%20Sizing%20Details%20v%0A111%2C%20Silk%20T-Shirt%2C%2030%2C%2030%2C%2015-S%5C%2C%2015-XL%0A125%2C%20Red%20Cotton%20Dress%2C%205%2C%2010%2C%201-S%5C%2C%202-M%5C%2C%202-XL%0A%7B10L%2C%2030R%2C%2015L%2C%2015L%2C%2030R%7D</text>
+      </controlProperties>
+    </control>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::LinkBar" x="405" y="177" w="-1" h="-1" measuredW="187" measuredH="19" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Current%20Inventory%2C%20Data%20Entry</text>
+      </controlProperties>
+    </control>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::Label" x="405" y="326" w="-1" h="-1" measuredW="94" measuredH="21" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Inventory%20Items</text>
+      </controlProperties>
+    </control>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::Label" x="946" y="326" w="-1" h="-1" measuredW="89" measuredH="21" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Update%20History</text>
+      </controlProperties>
+    </control>
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::Canvas" x="946" y="356" w="222" h="179" measuredW="100" measuredH="70" zOrder="7" locked="false" isInGroup="-1"/>
+    <control controlID="9" controlTypeID="com.balsamiq.mockups::Paragraph" x="957" y="370" w="-1" h="-1" measuredW="200" measuredH="80" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>5/5/2014%20-%208%3A00pm%20-%20Update%20by%20Sam%20S.%0A5/4/2014%20-%206%3A00pm%20-%20Update%20by%20Amanda%20J.</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
