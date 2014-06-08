@@ -15,9 +15,9 @@
         <text>We%20inventory%20your%20stuff%21</text>
       </controlProperties>
     </control>
-    <control controlID="4" controlTypeID="com.balsamiq.mockups::DataGrid" x="405" y="353" w="512" h="182" measuredW="424" measuredH="81" zOrder="3" locked="false" isInGroup="-1">
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::DataGrid" x="405" y="353" w="512" h="182" measuredW="317" measuredH="81" zOrder="3" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>Item%20%23%20%5E%2C%20Item%20Name%20%5Ev%2C%20Actual%20%23%2C%20System%20%23%2C%20Sizing%20Details%20v%0A111%2C%20Silk%20T-Shirt%2C%2030%2C%2030%2C%2015-S%5C%2C%2015-XL%0A125%2C%20Red%20Cotton%20Dress%2C%205%2C%2010%2C%201-S%5C%2C%202-M%5C%2C%202-XL%0A%7B10L%2C%2030R%2C%2015L%2C%2015L%2C%2030R%7D</text>
+        <text>Item%20%23%20%5E%2C%20Item%20Name%20%5Ev%2C%20Actual%20%23%2C%20System%20%23%0A111%2C%20Silk%20T-Shirt%2C%2030%2C%2030%0A125%2C%20Red%20Cotton%20Dress%2C%205%2C%2010%0A%7B15L%2C%2055R%2C%2015L%2C%2015L%7D</text>
       </controlProperties>
     </control>
     <control controlID="5" controlTypeID="com.balsamiq.mockups::LinkBar" x="405" y="177" w="-1" h="-1" measuredW="187" measuredH="19" zOrder="4" locked="false" isInGroup="-1">
