@@ -1,0 +1,49 @@
+1. Create a folder on your desktop called "Inventory". This is our working directory for the project.
+
+2. Download Bootstrap 3 from http://www.getbootstrap.com. You need 3 folders: css, fonts, js. Copy these three folders into the Inventory folder.
+
+3. Go to http://www.jquery.com and download the latest 1.x series file for production. I will be using jquery-1.10.2.min.js, which is available in the workshop file distribution. Copy this file to the Scripts folder inside of the inventory folder.
+
+4. Create a folder inside of the inventory folder called "Content". Create a folder called "Images" inside of it. Go to the images folder inside of bootstrap-workshop and copy all images from here to the img folder. Preserve the file and folder structure. (You do not have to copy the text credits file.)
+
+5. Create a "Styles" folder in Content. Create a blank css document inside of the Styles folder called custom.css
+
+6. Copy index.html to the inventory folder. (This is a basic starting HTML5 document.)
+
+7. The final folder and file structure inside of the fruit folder should be as follows:
+
+fruit
+	Content
+	    Styles
+		    bootstrap.css
+		    bootstrap.min.css
+		    bootstrap-theme.min.css
+		    bootstrap-theme.css
+		    custom.css
+	
+        Fonts
+            glyphiconshalflines-regular.eot, .svg, .ttf, .woff
+
+        Images
+            2 folders of images (large, thumbs) plus 15 individual images in this folder
+
+	Scripts
+		bootstrap.js
+		bootstrap.min.js
+		jquery-1.10.2.min.js
+
+	index.html
+
+8. Add the viewport meta tag to the head of the document:
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+9. Link the bootstrap.min.css and custom.css files in the head of the document.
+    <link href="Content/Styles/bootstrap.min.css" rel="stylesheet">
+    <link href="Content/Styles/custom.css" rel="stylesheet">
+
+10. At the bottom of the document, just before the </body> tag, link to the jquery and bootstrap.min.js documents:
+
+	<!-- javascript -->
+	<script src="Scripts/jquery-1.10.2.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
