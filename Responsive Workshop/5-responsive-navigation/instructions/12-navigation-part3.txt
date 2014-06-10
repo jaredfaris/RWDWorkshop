@@ -1,19 +1,17 @@
-To create the dropdown menu, remove <li><a href="oranges.html">Citrus</a></li> and replace with:
+To create the dropdown menu, remove <li><a href="manufacturers.html">Manufacturers</a></li> and replace with:
 
+                    <li><a href="manufacturers.html">Manufacturers</a>
+                        <ul>
+                            <li><a href="#">Factory Co.</a></li>
+                            <li><a href="#">Company Co.</a></li>
+                            <li><a href="#">Business Co.</a></li>
+                        </ul>
+                    </li>
 
-
-       		<li><a href="#">Citrus</a>
-                     <ul>
-                        <li><a href="oranges.html">Oranges</a></li>
-                        <li><a href="#">Limes</a></li>
-                        <li><a href="#">Lemons</a></li>
-                      </ul>
-                 </li>
-
-Add a class of "dropdown" to citrus LI
-Add a class of "dropdown-toggle" to the citrus A
-Add  data-toggle="dropdown" to the citrus A -- this binds the Javascript to the tag to make the dropdown occur.
-Add <b class="caret"></b> next to Citrus -- this creates the dropdown character
+Add a class of "dropdown" to Manufacturers LI
+Add a class of "dropdown-toggle" to the Manufacturers A
+Add  data-toggle="dropdown" to the Manufacturers A -- this binds the Javascript to the tag to make the dropdown occur.
+Add <b class="caret"></b> next to Manufacturers -- this creates the dropdown character
 Add a class of "dropdown-menu" to the nested UL
 
 
@@ -22,10 +20,10 @@ http://getbootstrap.com/components/#navbar
 
 Final markup:
 
-      <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Citrus <b class="caret"></b></a>
-           <ul class="dropdown-menu">
-              <li><a href="oranges.html">Oranges</a></li>
-              <li><a href="#">Limes</a></li>
-              <li><a href="#">Lemons</a></li>
-           </ul>
-      </li>
+                    <li class="dropdown"><a href="manufacturers.html" class="dropdown-toggle" data-toggle="dropdown">Manufacturers <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Company 1</a></li>
+                            <li><a href="#">Company 2</a></li>
+                            <li><a href="#">Company 3</a></li>
+                        </ul>
+                    </li>
