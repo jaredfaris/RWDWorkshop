@@ -1,0 +1,5 @@
+Now our lists are unsorted!
+
+What are some ways that we can cause the lists to stay sorted when we move items around?
+
+Also, let's look at how we can read the selected and unselected values and create a JS object out of them.
