@@ -10,9 +10,9 @@
 
 6. Copy index.html to the inventory folder. (This is a basic starting HTML5 document.)
 
-7. The final folder and file structure inside of the fruit folder should be as follows:
+7. The final folder and file structure inside of the inventory folder should be as follows:
 
-fruit
+Inventory
 	Content
 	    Styles
 		    bootstrap.css
