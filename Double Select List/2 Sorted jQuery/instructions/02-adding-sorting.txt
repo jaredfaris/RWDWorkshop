@@ -1,8 +1,0 @@
-Now our lists are unsorted!
-
-What are some ways that we can cause the lists to stay sorted when we move items around?
-
-Also, let's look at how we can read the selected and unselected values and create a JS object out of them.
-
-Bonus points: Let's remove the <option>s from the initial page and write them there through JavaScript.
-This would be how we'd do it with an AJAX control that gets its data from a separate call to the server
