@@ -1,0 +1,5 @@
+As controls get more complex, it gets really messy to manipulate DOM objects all the time.
+
+Remove any JavaScript that finds objects and appends them elsewhere.
+
+Create one or more arrays of JS objects. Modify the state of those objects. Then re-render the page.

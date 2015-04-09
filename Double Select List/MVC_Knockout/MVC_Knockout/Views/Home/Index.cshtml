@@ -1,0 +1,59 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="container">
+    <form id="dslControlForm">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <div class="dsl-control">
+                    <div class="left-container">
+                        <select multiple class="unselected-values" data-bind="foreach: items">
+                            <!-- ko ifnot: selected -->
+                            <option data-bind="value: value, text: name"></option>
+                            <!-- /ko -->
+                        </select>
+                    </div>
+
+                    <div class="center-container">
+                        <div class="right-controls">
+                            <input class="move-all-right" type="button" value=">>">
+                            <br>
+                            <input class="move-selected-right" type="button" value=">">
+                        </div>
+                        <div class="left-controls">
+                            <input class="move-selected-left" type="button" value="<">
+                            <br>
+                            <input class="move-all-left" type="button" value="<<">
+                        </div>
+                    </div>
+
+                    <div class="right-container">
+                        <select multiple class="selected-values" data-bind="foreach: items">
+                            <!-- ko if: selected -->
+                            <option data-bind="value: value, text: name"></option>
+                            <!-- /ko -->
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <div class="save-controls">
+                    <input type="submit" value="Submit">
+                </div>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </form>
+
+</div>
+
+@section scripts {
+    <script src="~/Scripts/double-select-list.js"></script>
+}

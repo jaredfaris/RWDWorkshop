@@ -1,0 +1,17 @@
+<!-- Bits of HTML markup belonging in the boxes on the home page.  -->
+
+                <div class="list-group">
+                    <a href="#" class="list-group-item">05/05/2014 - Update by Bob S.</a>
+                    <a href="#" class="list-group-item">05/04/2014 - Update by Bob S.</a>
+                    <a href="#" class="list-group-item list-group-item-danger">05/03/2014 - Update by Bob S.</a>
+                    <a href="#" class="list-group-item">05/02/2014 - Update by Mary A.</a>
+                    <a href="#" class="list-group-item">05/01/2014 - Update by Bob S.</a>
+                    <a href="#" class="list-group-item">04/31/2014 - Update by Bob S.</a>
+                </div>
+
+list groups can be either <ul> or <div> elements. Notice that we called out one of the items using one of bootstrap's built in classes.
+Use <div>s with <a> when you want something clickable like a link. Use <ul> for read-only.
+
+http://getbootstrap.com/components/#list-group
+
+list-group-item-danger

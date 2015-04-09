@@ -1,0 +1,9 @@
+Header: http://getbootstrap.com/components/#page-header
+
+We want to add a header that says "Acme Co" and a subheader that says something about inventory.
+
+Add code below to line 19 in index.html
+
+            <div class="page-header">
+                <h1>Acme Co <small>We inventory your stuff!</small></h1>
+            </div>

@@ -1,0 +1,86 @@
+Create a new forms.html. Update the navigation to point to this file.
+Take the general layout from index.html and pasting it in forms.html. Give it a unique title.
+
+NOTE: In a production application, navigation and shared header elements would actually be stored in a reusable view rather than reproduced in every file.
+
+    <!doctype html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <title>Acme Co Data Entry</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap -->
+        <link href="Content/Styles/bootstrap.min.css" rel="stylesheet">
+        <link href="Content/Styles/custom.css" rel="stylesheet">
+    </head>
+
+    <body>
+    <div class="container">
+        <div class="row">
+            <nav>
+                <ul class="nav nav-pills">
+                    <li><a href="index.html">Inventory</a></li>
+                    <li class="active"><a href="forms.html">Data Entry</a></li>
+                    <li><a href="#">Manufacturers</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="row">
+            <div class="page-header">
+                <h1>Acme Co <small>We inventory your stuff!</small></h1>
+            </div>
+        </div>
+        <div class="row">
+            <!-- form content here -->
+        </div>
+        <footer class="row text-center">
+            <p>Acme Co Inventory - This information is confidential.</p>
+        </footer>
+    </div>
+    <!-- javascript -->
+    <script src="Scripts/jquery-1.11.0.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    </body>
+    </html>
+
+
+Create a column layout that allows the form to be centered and of a reasonable size on big screens and full width on small screens.
+Look at "col-sm-*" and "col-sm-offset-*" here: http://getbootstrap.com/css/#grid-offsetting
+
+Form container
+
+    <div class="col-sm-4 col-sm-offset-4">
+        <!-- This will be centered on a big screen and full screen on a small display -->
+    </div>
+
+
+Then fill in the form itself.
+http://getbootstrap.com/css/#forms
+
+            <form role="form">
+                <div class="form-group">
+                    <label for="itemNumber">Item Number</label>
+                    <input type="text" class="form-control" id="itemNumber" placeholder="Item Number">
+                </div>
+                <div class="form-group">
+                    <label for="itemName">Item Name</label>
+                    <input type="text" class="form-control" id="itemName" placeholder="Item Number">
+                </div>
+                <div class="form-group">
+                    <label for="actualIventoryCount">Inventory Count</label>
+                    <input type="number" class="form-control" id="actualIventoryCount" placeholder="InventoryCount">
+                </div>
+                <button type="submit" class="btn btn-primary form-control">Submit</button>
+            </form>
+
+
+
+
+
+
+
+
+
+
+
+

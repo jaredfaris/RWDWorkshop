@@ -1,0 +1,53 @@
+<!-- Bits of HTML markup belonging in the boxes on the home page.  -->
+
+                <table class="table table-bordered table-hover">
+                    <thead>
+                    <tr>
+                        <th>Item #</th>
+                        <th>Item Name</th>
+                        <th>Actual #</th>
+                        <th class="hidden-xs">System #</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>111</td>
+                        <td>T-Shirt</td>
+                        <td>3</td>
+                        <td class="hidden-xs">3</td>
+                    </tr>
+                    <tr>
+                        <td>112</td>
+                        <td>Hat</td>
+                        <td>5</td>
+                        <td class="hidden-xs">5</td>
+                    </tr>
+                    <tr>
+                        <td>113</td>
+                        <td>Belt</td>
+                        <td>122</td>
+                        <td class="hidden-xs">123</td>
+                    </tr>
+                    <tr>
+                        <td>114</td>
+                        <td>Different Belt</td>
+                        <td>122</td>
+                        <td class="hidden-xs">123</td>
+                    </tr>
+                    <tr>
+                        <td>115</td>
+                        <td>Even More Different Belt</td>
+                        <td>122</td>
+                        <td class="hidden-xs">123</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+
+In addition to the above markup, we added classes to the table.
+http://getbootstrap.com/css/#tables
+
+table-bordered (makes it have a border)
+table-hover (makes it highlight rows as you hover... this could signal an onclick behavior)
+
+Additionally, we added the hidden-xs class to one column so that on a small device it doesn't display.
