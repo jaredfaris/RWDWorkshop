@@ -1,0 +1,34 @@
+Copy forms.html to manufacturers.html. Remove the form content and update the navigation in all pages.
+
+Content for the manufacturers page
+
+    <div class="row">
+        <div class="col-sm-9 col-sm-push-3">
+           <!-- right column -->
+        </div>
+        <div class="col-sm-3 col-sm-pull-9">
+           <!-- left column -->
+        </div>
+    </div>
+
+This is grid markup with column ordering for better SEO and small screen optimization.
+It makes the left column appear on the left on large screens and underneath when the grid stacks horizontally.
+
+
+Left column
+
+            <img src="Content/Images/Store_clip_art.svg" alt="Manufacturer Co" class="img-responsive">
+            <blockquote>
+                <p>Our slogan is the best!</p>
+                <small>John Smith, CEO</small>
+            </blockquote>
+
+
+
+Right column
+
+
+            <h2>Business</h2>
+            <p><img src="Content/Images/Store_clip_art.svg" alt="Manufacturer Co" class="pull-right img-thumbnail img-responsive">Business business business. Numbers.</p>
+            <p>Business business business. Numbers. Business business business. Numbers. Business business business. Numbers. Business business business. Numbers. Business business business. Numbers. Business business business. Numbers.</p>
+            <p>Is this working?</p>
