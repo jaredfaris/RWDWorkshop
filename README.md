@@ -2,10 +2,10 @@
 
 This workshop is intended to teach students the basics of RWD including:
 * What is RWD?
+* Box model and spacing
 * Media queries
 * Responsive grids
-* Flexbox
-* Variable fonts
+* Fonts
 
 There are other things that likely should be presented alongside of the workshop code. I may get around to adding those here later.
 
