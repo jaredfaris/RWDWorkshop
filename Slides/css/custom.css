@@ -2,6 +2,6 @@ ul.no-bullet {
     list-style-type: none;
 }
 
-p.small {
+p.small, ul.small {
     font-size: .6em;
 }
