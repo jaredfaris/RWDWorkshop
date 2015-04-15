@@ -249,11 +249,52 @@
 					</section>
 
 					<section>
+						<style>
+							div.BoxModelno-spacing {
+								font-size: 0;
+							}
+
+							div.BoxModelno-spacing p {
+								padding: 0;
+								margin: 0;
+								font-size: 2rem;
+								line-height: 1;
+								text-transform: uppercase;
+							}
+						</style>
 						<h2>Box Model manipulation</h2>
+
+						<div class="BoxModelno-spacing">
+							<p>This may be really hard to read</p>
+							<p>because it's all squished together</p>
+							<p>so maybe you should consider padding.</p>
+							<p>I mean seriously, that's a lot of</p>
+							<p>text, all in one really dense block.</p>
+						</div>
+					</section>
+
+					<section class="tracing">
+						<h2>Tracing Computed Styles</h2>
+
+						<div id="TracingparentExampleDiv">
+							<div id="TracingchildExampleDiv">
+								<p class="TracingImAParagraph">
+									<span>I should be blue.</span>
+								</p>
+							</div>
+						</div>
+					</section>
+
+					<section>
+						<h2>Finding Your Changes</h2>
+
+						<img src="images/chrome-tracing-style-changes.png">
 					</section>
 
 					<section>
 						<h2>What does it look like on mobile?</h2>
+
+						<img src="images/chrome-mobile-button.png">
 					</section>
 				</section>
 

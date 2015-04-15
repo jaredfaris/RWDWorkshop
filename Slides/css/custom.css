@@ -5,3 +5,21 @@ ul.no-bullet {
 p.small, ul.small {
     font-size: .6em;
 }
+
+
+/* Examples for tracing computed changes */
+.TracingImAParagraph {
+    color: pink;
+}
+
+#TracingchildExampleDiv {
+    color: green;
+}
+
+#TracingparentExampleDiv {
+    color: blue;
+}
+
+#TracingparentExampleDiv span {
+    color: red;
+}
