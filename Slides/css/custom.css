@@ -6,6 +6,10 @@ p.small, ul.small {
     font-size: .6em;
 }
 
+img.small {
+    width: 75%;
+}
+
 
 /* Examples for tracing computed changes */
 .TracingImAParagraph {
