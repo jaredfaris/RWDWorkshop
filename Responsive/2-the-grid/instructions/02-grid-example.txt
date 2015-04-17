@@ -1,11 +1,15 @@
 Grids explained in detail here:
 http://getbootstrap.com/css/#grid
 
-Insert 4 rows into the body of the HTML page. First row is for nav, second for jumbotron (header area), third for the 4 forms/tables, 4th for the footer.
+Insert 4 rows into the body of the HTML page. First row is for nav, second for jumbotron (header area),
+    third for the 4 forms/tables, 4th for the footer.
 
-In the 3rd row, set this up to have two columns. The first column should take up 8 of the 12 grid spots. The second should take up the remaining 4. They should both become full width below medium size.
+In the 3rd row, set this up to have two columns. The first column should take up 8 of the 12 grid spots.
+    The second should take up the remaining 4. They should both become full width below medium size.
 
-NOTE: we've decided that the update list gets hidden on mobile devices because it's of secondary importance. Make it hide if we're on an extra small display.
+NOTE: We've decided that the update list gets hidden on mobile devices because it's of secondary importance.
+    Make it hide if we're on an extra small display. In a production app, we may just collapse this instead of
+    totally hiding it.
 
 4th row: change to footer tag, insert a privacy statement. Center the text.
 
