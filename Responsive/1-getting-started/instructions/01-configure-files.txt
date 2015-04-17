@@ -1,10 +1,13 @@
 1. Create a folder on your desktop called "Inventory". This is our working directory for the project.
 
-2. Download Bootstrap 3 from http://www.getbootstrap.com. You need 3 folders: css, fonts, js. Copy these three folders into the Inventory folder.
+2. Unzip the bootstrap-3.1.1-dist.zip file in the start folder. You need 3 folders: css, fonts, js. Copy these three folders into the Inventory folder.
 
-3. Go to http://www.jquery.com and download the latest 1.x series file for production. I will be using jquery-1.10.2.min.js, which is available in the workshop file distribution. Copy this file to the Scripts folder inside of the inventory folder.
+3. Copy the jquery-1.11.0.min.js file to the Scripts folder inside of the inventory folder.
+	This is an older version of jQuery but that's ok for this workshop. Newer versions would likely work.
 
-4. Create a folder inside of the inventory folder called "Content". Create a folder called "Images" inside of it. Go to the images folder inside of bootstrap-workshop and copy all images from here to the img folder. Preserve the file and folder structure. (You do not have to copy the text credits file.)
+4. Create a folder inside of the inventory folder called "Content". Create a folder called "Images" inside of it.
+	Go to the images/ folder copy the image from here to the Content/Images folder.
+	Preserve the file and folder structure. (You do not have to copy the text credits file.)
 
 5. Create a "Styles" folder in Content. Create a blank css document inside of the Styles folder called custom.css
 
@@ -36,6 +39,8 @@ Inventory
 
 8. Add the viewport meta tag to the head of the document:
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    What do you think this does?
 
 
 9. Link the bootstrap.min.css and custom.css files in the head of the document.
