@@ -1,0 +1,43 @@
+This example already has Bootstrap installed. We'll look at how to install it during the Responsive lab.
+
+We're going to create a grid that has columns of a few different sizes, similar to what you see on the Bootstrap site.
+    View the site (here: http://getbootstrap.com/css/#grid) for more details.
+
+NOTE: The custom.css file has some styles in it that will make our grid stand out visually so you can see what is
+    happening. This won't normally be the case and you will be able to style your content as you choose.
+
+1) Open the Start folder and find the DIV with the class "container". That starts our Bootstrap grid.
+
+2) Add a row with two col-lg-6 columns. These will each take up half of the grid, and quickly break to take up a full
+    row on anything other than a large monitor.
+
+            <div class="row">
+                <div class="col-lg-6">.col-lg-6</div>
+                <div class="col-lg-6">.col-lg-6</div>
+            </div>
+
+3) Resize your browser, or use the Responsive/Device Mode viewer to see these columns break.
+
+4) Add a row with some col-md-* columns. These will sit side by side on desktops and some tablets.
+
+        <div class="row">
+            <div class="col-md-6">.col-md-6</div>
+            <div class="col-md-4">.col-md-4</div>
+            <div class="col-md-2">.col-md-2</div>
+        </div>
+
+5) Again, resize your browser to view these breaking.
+
+6) Add a row with some small and extra small columns. The small columns will stay adjacent on tablets but break on
+    most phones. The XS columns will always stay adjacent.
+
+            <div class="row">
+                <div class="col-sm-1">.col-sm-1</div>
+                <div class="col-sm-1">.col-sm-1</div>
+                <div class="col-sm-1">.col-sm-1</div>
+                <div class="col-xs-1">.col-xs-1</div>
+                <div class="col-xs-4">.col-xs-4</div>
+                <div class="col-sm-4">.col-sm-4</div>
+            </div>
+
+7) Again, resize your browser and see how this works.
