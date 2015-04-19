@@ -1,0 +1,38 @@
+Note: For a great deep-dive into the Bootstrap grid, check out this site: https://scotch.io/tutorials/understanding-the-bootstrap-3-grid-system
+
+Generally when laying out a grid, you'll have a design in mind. For instance, you might want the following:
+
+    On mobile devices: 1 column
+    On tablets: 2 columns
+    On desktops: 4 columns
+
+You can do this by applying multiple classes to each column.
+
+1) Open the Index.html file in Start. Delete the existing rows until you have an empty DIV with the class "container".
+
+2) Create four columns that each have the class "col-sm-6". This will cause them to show up individually on extra-small
+    (phone) devices but sit in pairs on tablets:
+
+        <div class="row">
+            <div class="col-sm-6">col-sm-6</div>
+            <div class="col-sm-6">col-sm-6</div>
+            <div class="col-sm-6">col-sm-6</div>
+            <div class="col-sm-6">col-sm-6</div>
+        </div>
+
+3) View this in your browser or use the Device Viewer to see this like it would render on an iPhone 6 or iPad 4.
+
+4) Next, we want to tell these columns to display 4 across on a desktop. Do this by adding the class "col-md-3" to each
+    column:
+
+        <div class="row">
+            <div class="col-sm-6 col-lg-3">col-sm-6</div>
+            <div class="col-sm-6 col-lg-3">col-sm-6</div>
+            <div class="col-sm-6 col-lg-3">col-sm-6</div>
+            <div class="col-sm-6 col-lg-3">col-sm-6</div>
+        </div>
+
+
+5) Use your browser to verify that this shows up as a single column at small sizes, two columns at medium sizes, and 4
+    columns on the desktop. *Note* Depending on your laptops resolution, you may need to use "col-md-3" instead of
+    "col-lg-3" to get these to display correctly. Large will work for any device over 1170px wide.
