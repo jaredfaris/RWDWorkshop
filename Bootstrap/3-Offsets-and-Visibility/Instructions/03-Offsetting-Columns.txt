@@ -1,0 +1,23 @@
+Sometimes you want to have space between columns. You can offset columns by using the "col-XX-##" class. For instance,
+    you may want to do something like this.
+
+
+[                 col-md-12                 ]
+  <blank space>   [ col-md-8 col-md-offset-4]
+
+
+Offsets are frequently used when you need to add spaces between elements, or to align an element down the page with
+something higher up.
+
+1) Create a new row in your grid and put a 3 column DIV in it. Offset this by 3 columns so it lines up under the 2nd DIV
+    above it.
+
+                <div class="col-sm-3 col-sm-offset-3">col-sm-3 col-sm-offset-3</div>
+
+2) Create a second 3 column DIV by this one. Don't offset it so that it's adjacent. Your final page should look like this:
+
+        [ div ][ div ][ div ][ div ]
+               [ div ][ div ]
+
+3) Look at what happens to these divs as you resize them. Notice how they stay centered, even when the first row
+    changes at the col-sm-6 breakpoint.
