@@ -1,0 +1,23 @@
+Finally, you can nest grids inside of grids. This is useful when you want to break a column down into additional columns.
+
+1) Create a new row that includes 8 width and 4 width columns.
+
+        <div class="row">
+            <div class="col-md-8">Left Column</div>
+            <div class="col-md-4">Right Column</div>
+        </div>
+
+2) Inside of the 8 width column, create two half size (6) columns.
+
+        <div class="row">
+            <div class="col-md-8">
+  NEW -->       <div class="row">
+  NEW -->           <div class="col-md-6">Left Column 1</div>
+  NEW -->           <div class="col-md-6">Left Column 2</div>
+  NEW -->       </div>
+            </div>
+            <div class="col-md-4">Right Column</div>
+        </div>
+
+
+*NOTE* The overhang you see is from the custom styles setup in this project to make the DIVs visible. That won't happen normally.
