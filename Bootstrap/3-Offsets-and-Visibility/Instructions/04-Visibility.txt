@@ -42,3 +42,5 @@ A DIV marked with "visible" *only* displays at the size specified. A DIV marked 
         <div class="col-xs-9 col-md-12">
 
 5) Now verify that the horizontal banner hides on small displays and that the vertical one shows up adjacent to the content.
+
+NOTE: You can apply visibility to a lot more than just DIVs. It can be useful for hiding table columns or other content.
