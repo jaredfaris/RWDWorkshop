@@ -4,6 +4,41 @@ Sometimes you want to be able to hide content at certain sizes. For instance, yo
 Note: It's often considered bad form to not make content available to people, just because they are on a smaller device.
     However, there may be times where you have two controls rendering similar content that may be optimized differently.
 
+To make things visible or inivisible at certain sizes, use the ".hidden-XX" or ".visible-XX" classes.
+
+A DIV marked with "visible" *only* displays at the size specified. A DIV marked with "hidden" displays at all sizes
+    *other* than the one specified. You can have multiple classes on a DIV if you want it to hide at multiple sizes.
+
+1) Create a new row with a 12 column DIV that shows up only on medium and large screens.
+
+        <div class="row">
+            <div class="col-md-12 hidden-sm hidden-xs">I'm a banner</div>
+        </div>
 
 
-1) Create a new row that 
+
+2) Inside this row, add another 12 column DIV to represent content that you might put under this banner. Don't set visibility on this.
+
+        <div class="row">
+            <div class="col-md-12 hidden-sm hidden-xs">I'm a banner</div>
+  NEW -->   <div class="col-md-12">I'm content. I'm content. I'm content. I'm content. I'm content. I'm content. I'm content. I'm content. I'm content. I'm content. I'm content. I'm content. I'm content. I'm content. I'm content. I'm content. I'm content. I'm content. I'm content. I'm content. I'm content. </div>
+        </div>
+
+
+
+3) Notice how the banner disappears if you narrow your window or use a tablet or phone. Let's create a new vertical
+    banner that *only* shows up on the narrower devices.
+
+        <div class="row">
+            <div class="col-md-12 hidden-sm hidden-xs">I'm a banner</div>
+            <div class="col-md-12">I'm content. I'm content. I'm content. I'm content. I'm content. I'm content. I'm content. I'm content. I'm content. I'm content. I'm content. I'm content. I'm content. I'm content. I'm content. I'm content. I'm content. I'm content. I'm content. I'm content. I'm content. </div>
+  NEW -->   <div class="col-xs-3 visible-xs-block visible-sm-block">Vertical Banner</div>
+        </div>
+
+
+4) Notice how the Vertical Banner shows up on the small screens, but the content is still full width? We need to tell
+    the content to change to fewer columns on the smaller device. Change the content row to:
+
+        <div class="col-xs-9 col-md-12">
+
+5) Now verify that the horizontal banner hides on small displays and that the vertical one shows up adjacent to the content.
