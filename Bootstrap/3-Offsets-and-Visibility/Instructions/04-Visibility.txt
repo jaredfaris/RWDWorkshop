@@ -4,7 +4,7 @@ Sometimes you want to be able to hide content at certain sizes. For instance, yo
 Note: It's often considered bad form to not make content available to people, just because they are on a smaller device.
     However, there may be times where you have two controls rendering similar content that may be optimized differently.
 
-To make things visible or inivisible at certain sizes, use the ".hidden-XX" or ".visible-XX" classes.
+To make things visible or invisible at certain sizes, use the ".hidden-XX" or ".visible-XX" classes.
 
 A DIV marked with "visible" *only* displays at the size specified. A DIV marked with "hidden" displays at all sizes
     *other* than the one specified. You can have multiple classes on a DIV if you want it to hide at multiple sizes.
