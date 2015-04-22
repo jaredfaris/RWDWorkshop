@@ -1,0 +1,129 @@
+body {
+  font-family: "helvetica", sans-serif;
+  font-size: 14px;
+  color: #333333;
+}
+
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.container {
+  margin: auto;
+  width: 96%;
+  max-width: 960px;
+}
+
+.main-site-header {
+  width: 100%;
+  height: 50px;
+  background: #333333;
+  margin-bottom: 60px;
+  padding-top: 10px;
+}
+
+.logo {
+  float: left;
+  background: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.main-navigation {
+  float: right;
+  margin-top: 14px;
+}
+
+.main-navigation a {
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  text-decoration: none;
+  border: 1px solid white;
+  border-radius: 4px;
+  padding: 6px 12px;
+  padding-top: 9px;
+  margin-left: 12px;
+}
+
+table {
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+th {
+  border-bottom: 1px solid #efefef;
+  color: #77C75F;
+}
+
+td, th {
+  padding: 10px 6px;
+  padding-top: 12px;
+}
+
+tr:nth-child(even) {
+  background: #f3f3f3;
+}
+
+th, td {
+  text-align: left;
+}
+
+td {
+  font-size: 12px;
+}
+
+.main-site-footer {
+  background: #f3f3f3;
+  border-radius: 4px;
+  padding: 20px;
+}
+
+button {
+  color: white;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  padding: 14px 21px;
+  padding-top: 16px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+
+footer button {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+footer button:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 600px) {
+  footer button {
+    width: 49%;
+    float: left;
+    margin-bottom: 0;
+  }
+
+  footer button:first-child {
+    margin-right: 2%;
+  }
+}
+
+.primary-button {
+  text-shadow: 0 1px 1px #62BE45;
+  background: #77C75F;
+  border: 1px solid #62BE45;
+}
+
+.seconday-button {
+  text-shadow: 0 1px 1px black;
+  background: #333333;
+  border: 1px solid black;
+}
