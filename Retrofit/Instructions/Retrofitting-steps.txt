@@ -1,0 +1,67 @@
+This is much less of a "follow the instructions" and more of a free-form exercise. This guide should help give you
+    direction but treat this as more of a sandbox for learning.
+
+Note: The numbering in this document matches the folder structure differently than other exercises. You can follow along
+    as we attempt to clean up a few things.
+
+00) The first thing to do is figure out if/when the site breaks on smaller devices. For instance, the site seems to start
+    having a horizontal scroll bar around 915px wide. This may be our first break. Something seems to be causing this.
+
+
+01) Look at the <div class="page"> element. It has a fixed width. That's not going to work. We can maybe set a media
+    query to only set a fixed width on large screens.
+
+        .page {
+            margin: 0px auto 0px auto;
+        }
+
+        @media (min-width: 915px){
+            .page {
+                width: 863px;
+            }
+        }
+
+02) The header is sort of starting to work now on smaller displays. The logo can overlap when it gets small enough though.
+    We don't like that much. That seems to happen around 625px. Let's break that up. It appears there is a style on
+    "header #title h1 a" that causes the logo to "position: absolute" that we can remove.
+
+    The header image would look better centered at this point too. Let's do that and give it a bit of margin.
+
+        @media (max-width: 625px) {
+            header #title h1 a {
+                position: inherit;
+                margin: 10px auto;
+            }
+        }
+
+    The header has a fixed height. That's not great because it causes the background image to do weird things. Let's remove that.
+
+        @media (max-width: 625px) {
+            header {
+                height: auto;
+            }
+        }
+
+    This has the navigation do something odd. Oh, that's positioned absolutely too. Lovely. Let's make that follow the
+    block positioning flow and center it too. The UL and LIs float which wreaks havoc here too. We'll convert them to
+    "display: block"
+
+        @media (max-width: 625px) {
+            nav {
+                position: relative;
+                right: 0;
+                bottom: 0;
+            }
+
+            nav ul#menu {
+                overflow: hidden;
+                display: inline-block;
+                margin: 0px;
+                float: none;
+            }
+
+            nav ul#menu li {
+                float: none;
+                display: inline-block;
+            }
+        }

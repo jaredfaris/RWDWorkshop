@@ -1,5 +1,0 @@
-This is much less of a "follow the instructions" and more of a free-form exercise. This guide should help give you
-    direction but treat this as more of a sandbox for learning.
-
-1) The first thing to do is figure out if/when the site breaks on smaller devices. For instance, the site seems to start
-    having a horizontal scroll bar around 915px wide. This may be our first break.
