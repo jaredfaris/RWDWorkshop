@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<!-- saved from url=(0026)http://www.nerddinner.com/ -->
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Nerd Dinner</title>
+    <meta content="Nerd, Dinner, Geek, Luncheon, Dweeb, Breakfast, Technology, Bar, Beer, Wonk" name="keywords">
+    <meta name="description" content="Host and promote your own Nerd Dinner free!">
+    <!--<link title="NerdDinner.com" rel="search" type="application/opensearchdescription+xml" href="http://www.nerddinner.com/Services/OpenSearch.ashx">-->
+    <link href="./Nerd Dinner_files/Production.css" rel="stylesheet" type="text/css" media="screen">
+   
+    <link href="./Nerd Dinner_files/jquery-ui.css" rel="stylesheet" type="text/css">
+    <!--<script src="./Nerd Dinner_files/geo.js"></script><script src="./Nerd Dinner_files/jquery-1.6.2.min.js" type="text/javascript"></script> -->
+    <script src="./Nerd Dinner_files/jquery-ui.min.js" type="text/javascript"></script> 
+    <script src="./Nerd Dinner_files/jquery.unobtrusive-ajax.min.js" type="text/javascript"></script>
+    <!--<script src="./Nerd Dinner_files/MicrosoftAjax.js" type="text/javascript"></script> -->
+    <!--<script src="./Nerd Dinner_files/MicrosoftMvcAjax.js" type="text/javascript"></script> -->
+
+    <script type="text/javascript">
+       if (typeof jQuery == 'undefined') {
+           document.write(unescape("%3Clink href='/Content/themes/base/jquery.ui.all.css' rel='stylesheet' type='text/css'%3E"));
+           document.write(unescape("%3Cscript src='/Scripts/jquery-1.6.2.min.js' type='text/javascript'%3E%3C/script%3E"));
+           document.write(unescape("%3Cscript src='/Scripts/jquery-ui-1.8.15.min.js' type='text/javascript'%3E%3C/script%3E"));
+           document.write(unescape("%3Cscript src='/Scripts/jquery.unobtrusive-ajax.min.js' type='text/javascript'%3E%3C/script%3E"));
+           document.write(unescape("%3Cscript src='/Scripts/MicrosoftAjax.js' type='text/javascript'%3E%3C/script%3E"));
+           document.write(unescape("%3Cscript src='/Scripts/MicrosoftMvcAjax.js' type='text/javascript'%3E%3C/script%3E"));
+       }
+   </script>
+
+    <script src="./Nerd Dinner_files/modernizr-1.7.min.js" type="text/javascript"></script>
+    <script src="./Nerd Dinner_files/yepnope.1.0.1-min.js" type="text/javascript"></script>    
+    <script src="./Nerd Dinner_files/date.format.js" type="text/javascript"></script>
+    <script src="./Nerd Dinner_files/NerdDinner.js" type="text/javascript"></script>
+    <script src="./Nerd Dinner_files/TimePickerAddOn.js" type="text/javascript"></script>
+    <!--<script src="./Nerd Dinner_files/ga.js" type="text/javascript"></script>-->
+    <!--<script src="./Nerd Dinner_files/tab.js" type="text/javascript"></script><style type="text/css" media="screen">    #uservoice-dialog {      z-index: 100003;      display: block;      text-align: left;      margin: -2em auto 0 auto;      position: fixed;     }        #uservoice-overlay {      position: fixed;      z-index:100002;      width: 100%;      height: 100%;      left: 0;      top: 0;      background-color: #000;      opacity: 0.7;    }        #uservoice-overlay p {      padding: 5px;      color: #ddd;      font: bold 14px arial, sans-serif;      margin: 0;      letter-spacing: -1px;    }        #uservoice-dialog #uservoice-dialog-close {      position: absolute;      height: 48px;      width: 48px;      top: -11px;      right: -12px;      color: #06c;      cursor: pointer;      background-position: 0 0;      background-repeat: no-repeat;      background-color: transparent;    }        html.dialog-open object,    html.dialog-open embed {      visibility: hidden;    }    a#uservoice-dialog-close { background-image: url(http://cdn.uservoice.com/images/widgets/close.png); }</style>-->
+    <link rel="stylesheet" type="text/css" href="./Nerd Dinner_files/TimePickerAddOn.css">
+    <link rel="alternate" type="application/rss+xml" title="NerdDinner.com - Upcoming Dinners" href="http://www.nerddinner.com/Services/RSS">
+    <!--<link rel="odata.service" title="NerdDinner.com OData Service" href="http://www.nerddinner.com/Services/OData.svc">-->
+    <!--<link rel="odata.feed" title="NerdDinner.com OData Service - Dinners" href="http://www.nerddinner.com/Services/OData.svc/Dinners">-->
+    
+
+    <link rel="stylesheet" type="text/css" href="./Nerd Dinner_files/mini-profiler-includes.css">
+<script type="text/javascript">
+    if (!window.jQuery) document.write(unescape("%3Cscript src='/mini-profiler-jquery.1.6.2.js' type='text/javascript'%3E%3C/script%3E"));
+    if (!window.jQuery || !window.jQuery.tmpl) document.write(unescape("%3Cscript src='/mini-profiler-jquery.tmpl.beta1.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="./Nerd Dinner_files/mini-profiler-jquery.tmpl.beta1.js" type="text/javascript"></script><style type="text/css"></style>
+<script type="text/javascript" src="./Nerd Dinner_files/mini-profiler-includes.js"></script>
+<script type="text/javascript">
+    jQuery(function() {
+        MiniProfiler.init({
+            ids: ["b360671d-c061-40e8-94d0-abe7490c57c4"],
+            path: '/',
+            version: '1.9.0.0',
+            renderPosition: 'left',
+            showTrivial: false,
+            showChildrenTime: false,
+            maxTracesToShow: 15
+        });
+    });
+</script>
+
+<link rel="stylesheet" type="text/css" rev="stylesheet" id="1429733617875" href="./Nerd Dinner_files/mapcontrol.css"><style type="text/css" media="screen">    body a#uservoice-feedback-tab,    body a#uservoice-feedback-tab:link {      background-position: 2px 50% !important;      position: fixed !important;      top: 45% !important;      display: block !important;      width: 25px !important;      height: 98px !important;      margin: -45px 0 0 0 !important;      padding: 0 !important;      z-index: 100001 !important;      background-position: 2px 50% !important;      background-repeat: no-repeat !important;      text-indent: -9000px;    }        body a#uservoice-feedback-tab:hover {      cursor: pointer;    }        a#uservoice-feedback-tab {       right: 0;       background-repeat: no-repeat;       background-color: #A2CC3B;       background-image: url(http://cdn.uservoice.com/images/widgets/en/feedback_tab_white.png);       border: outset 1px #A2CC3B;       border-right: none;     }        a#uservoice-feedback-tab:hover {       background-color: #7A0100;       border: outset 1px #7A0100;       border-right: none;     }</style><script type="text/javascript" id="1429733325191" src="./Nerd Dinner_files/Log"></script></head>
+<body>
+<!--<div id="uservoice-feedback"><a id="uservoice-feedback-tab" "="" onclick="UserVoice.Popin.show(); return false;" onmouseover="UserVoice.Popin.preload();" href="http://feedback.nerddinner.com/forums/general?lang=en">Open Feedback Dialog</a></div>-->
+    <div class="page">
+        <header>
+            <div id="title">
+                <h1>
+                    <a href="./Nerd Dinner_files/Nerd Dinner.html" title="Nerd Dinner" class="logo"></a>
+                </h1>
+            </div>
+            <div id="logindisplay">
+                
+
+    <!--[ <a href="http://www.nerddinner.com/Account/LogOn?returnUrl=%2F">Log On</a> ]-->
+
+            </div>
+            <nav>
+                <ul id="menu">
+                    <li><a href="./Nerd Dinner_files/Nerd Dinner.html">Find Dinner</a></li>
+                    <li><a href="http://www.nerddinner.com/Dinners/Create">Host Dinner</a></li>
+                    <li class="last"><a href="http://www.nerddinner.com/Home/About">About</a></li>
+                </ul>
+                <a class="feed" href="http://www.nerddinner.com/Services/OData.svc">
+                    <img alt="OData Feed" title="OData Feed" src="./Nerd Dinner_files/icon-odatafeed-28x28.png"></a>
+                <a class="feed" href="http://www.nerddinner.com/Services/RSS">
+                    <img alt="RSS Feed" title="RSS Feed" src="./Nerd Dinner_files/icon-feed-28x28.png"></a>
+                <a class="feed" href="webcal://www.nerddinner.com/Services/iCalFeed">
+                    <img alt="iCal Calendar Feed for Nerd Dinners" title="iCal Calendar Feed for Nerd Dinners" src="./Nerd Dinner_files/icon-icalfeed-28x28.png"></a>
+            </nav>
+        </header>
+        
+	<div id="hm-masthead">
+        <div id="searchBox">
+            <div class="search-text">
+                Enter your location or <strong><a href="http://www.nerddinner.com/Dinners">View All Upcoming Dinners</a></strong>.</div>
+            <input id="Location" name="Location" type="text" value="">
+            <input id="search" type="submit" value="Search">
+        </div>
+        <script type="text/javascript">
+            $("#search").click(ValidateAndFindDinners);
+
+            $("#Location").keypress(function (evt) {
+                if (evt.which == 13) {
+                    ValidateAndFindDinners();
+                }
+            });
+
+            function ValidateAndFindDinners() {
+                var where = $.trim($get('Location').value);
+
+                if (where.length < 1)
+                    return;
+
+                Sys.Application.addHistoryPoint({ 'where': where });
+
+                NerdDinner.FindDinnersGivenLocation(where);
+            }
+        </script>
+</div>
+
+
+        <div id="main" class="clearfix">
+            
+
+<script src="./Nerd Dinner_files/mapcontrol.ashx" type="text/javascript"></script>
+
+<h2>Find a Dinner</h2>
+
+<div id="mapDivLeft">
+	<div id="theMap" style="width: 580px; height: 400px; overflow: hidden; cursor: move; background-image: none; background-color: rgb(233, 231, 212);" class="MSVE_MapContainer"><div class="MSVE_Map" style="z-index: 1; top: 0px; left: 0px;"><div class="MSVE_ZoomBox_bg"></div><div class="MSVE_ZoomBox_fg"></div><div id="rootgraphicshape"></div><div id="VELayerListDiv"><div id="msftve_1000"><a href="javascript://pushin hover" id="msftve_1000_200000_10000" class="VEAPI_Pushpin" style="position: absolute; left: 239.5px; top: 101.5px; display: block; z-index: 1000;"><div onmouseout="if (VEMap._GetMapFromGUID(1429733948645).FireEvent(&quot;onmouseout&quot;))return;VEHideVEShapeERO(false);" onmouseover="if (VEMap._GetMapFromGUID(1429733948645).FireEvent(&quot;onmouseover&quot;))return;VEShowVEShapeERO(&quot;msftve_1000_200000_10000&quot;,1429733948645);" onmousedown="if (VEMap._GetMapFromGUID(1429733948645).FireEvent(&quot;onmousedown&quot;))return;VEDragVEShapeDown(&quot;msftve_1000_200000_10000&quot;,1429733948645);"> <img src="./Nerd Dinner_files/poi_usergenerated.gif"></div></a><a href="javascript://pushin hover" id="msftve_1000_200001_10001" class="VEAPI_Pushpin" style="position: absolute; left: 316.5px; top: 275.5px; display: block; z-index: 1000;"><div onmouseout="if (VEMap._GetMapFromGUID(1429733948645).FireEvent(&quot;onmouseout&quot;))return;VEHideVEShapeERO(false);" onmouseover="if (VEMap._GetMapFromGUID(1429733948645).FireEvent(&quot;onmouseover&quot;))return;VEShowVEShapeERO(&quot;msftve_1000_200001_10001&quot;,1429733948645);" onmousedown="if (VEMap._GetMapFromGUID(1429733948645).FireEvent(&quot;onmousedown&quot;))return;VEDragVEShapeDown(&quot;msftve_1000_200001_10001&quot;,1429733948645);"> <img src="./Nerd Dinner_files/poi_usergenerated.gif"></div></a></div></div><div align="left" style="position: absolute; z-index: 60; top: 0px; left: 0px; width: 1161px; height: 870px;"><svg height="100%" width="100%"></svg></div><img class="MSVE_ImageTile msve_Road_tile" src="./Nerd Dinner_files/r032010101.png" style="left: -70px; top: -133px; width: 256px; height: 256px; position: absolute; z-index: 1;"><img class="MSVE_ImageTile msve_Road_tile" src="./Nerd Dinner_files/r032010110.png" style="left: 186px; top: -133px; width: 256px; height: 256px; position: absolute; z-index: 1;"><img class="MSVE_ImageTile msve_Road_tile" src="./Nerd Dinner_files/r032010111.png" style="left: 442px; top: -133px; width: 256px; height: 256px; position: absolute; z-index: 1;"><img class="MSVE_ImageTile msve_Road_tile" src="./Nerd Dinner_files/r032010103.png" style="left: -70px; top: 123px; width: 256px; height: 256px; position: absolute; z-index: 1;"><img class="MSVE_ImageTile msve_Road_tile" src="./Nerd Dinner_files/r032010112.png" style="left: 186px; top: 123px; width: 256px; height: 256px; position: absolute; z-index: 1;"><img class="MSVE_ImageTile msve_Road_tile" src="./Nerd Dinner_files/r032010113.png" style="left: 442px; top: 123px; width: 256px; height: 256px; position: absolute; z-index: 1;"><img class="MSVE_ImageTile msve_Road_tile" src="./Nerd Dinner_files/r032010121.png" style="left: -70px; top: 379px; width: 256px; height: 256px; position: absolute; z-index: 1;"><img class="MSVE_ImageTile msve_Road_tile" src="./Nerd Dinner_files/r032010130.png" style="left: 186px; top: 379px; width: 256px; height: 256px; position: absolute; z-index: 1;"><img class="MSVE_ImageTile msve_Road_tile" src="./Nerd Dinner_files/r032010131.png" style="left: 442px; top: 379px; width: 256px; height: 256px; position: absolute; z-index: 1;"></div><input id="wl_ve_mapInput" class="MSVE_KeyboardInput" style="top: 0px; left: 0px; border: 0px; outline-width: 0px; color: transparent; background-color: transparent;"><div class="MSVE_LogoContainer"><div id="MSVE_PoweredByLogo"></div></div><div class="MSVE_ScaleBarLabel MSVE_ScaleBarLabelBg" style="bottom: 13px;">20 miles</div><div class="MSVE_ScaleBarLabel MSVE_ScaleBarLabelFg" style="bottom: 14px;">20 miles</div><div class="MSVE_ScaleBar MSVE_ScaleBarBg" style="width: 142px; bottom: 13px;"></div><div class="MSVE_ScaleBar MSVE_ScaleBarFg" style="width: 138px; bottom: 14px;"></div><div class="MSVE_Copyright MSVE_CopyrightBackground" style="bottom: 0px;"><span>© 2015 Microsoft Corporation</span> <span>© 2010 NAVTEQ</span> </div><div class="MSVE_Copyright MSVE_CopyrightForeground" style="bottom: 1px;"><span>© 2015 Microsoft Corporation</span> <span>© 2010 NAVTEQ</span> </div><div id="theMap_dashboard" class="MSVE_Dashboard MSVE_Dashboard_V5 MSVE_FlatlandMapMode MSVE_Dashboard_Small expanded" style="left: 5px; top: 5px;"><div class="MSVE_header" id="MSVE_navAction_header"></div><div id="MSVE_lowerContainer"><div id="MSVE_dashboardContainer"><div id="MSVE_mapViewRow"><div id="MSVE_zoomDiv"><div class="MSVE_ZoomBar" id="MSVE_TinyZoomBar"><div class="MSVE_ZoomBar_plus" id="MSVE_navAction_tinyZoomBar_plus" title="Zoom in. To zoom continuously, click and hold this button."></div><div class="MSVE_ZoomBar_minus" id="MSVE_navAction_tinyZoomBar_minus" title="Zoom out. To zoom continuously, click and hold this button."></div></div></div><div id="MSVE_navAction_mapViewCell" class="MSVE_dashboardMapModeContainer"></div></div><div id="MSVE_mapStyleRow"><div id="MSVE_navAction_mapStyleCell" class="MSVE_RoadMapStyle"><div id="MSVE_navAction_RoadMapStyle" class="MSVE_MapStyle">Road</div><div id="MSVE_navAction_AerialMapStyle" class="MSVE_MapStyle">Aerial</div><div id="MSVE_navAction_HybridMapStyle" class="MSVE_MapStyle">Hybrid</div></div></div></div></div></div></div>
+</div>
+
+<div id="mapDivRight">
+	<div class="hslice" id="2">
+		<h2 class="entry-title">Popular Dinners</h2>
+		<div class="entry-content" id="dinnerList"><li class="dinnerItem"><a href="http://www.nerddinner.com/6615">medh</a><br><strong>May 30</strong> with 22 RSVPs</li><li class="dinnerItem"><a href="http://www.nerddinner.com/6836">mik birthday partyy</a><br><strong>Apr 1</strong> with 19 RSVPs</li><li class="dinnerItem"><a href="http://www.nerddinner.com/7163">Futurama</a><br><strong>Dec 31</strong> with 10 RSVPs</li><li class="dinnerItem"><a href="http://www.nerddinner.com/7388">valentine's party</a><br><strong>Apr 30</strong> with 8 RSVPs</li><li class="dinnerItem"><a href="http://www.nerddinner.com/7936">Stir Trek Eve Game Night</a><br><strong>Apr 30</strong> with 7 RSVPs</li><li class="dinnerItem"><a href="http://www.nerddinner.com/6616">medh</a><br><strong>May 30</strong> with 6 RSVPs</li><li class="dinnerItem"><a href="http://www.nerddinner.com/7367">Graduation party</a><br><strong>Jul 2</strong> with 5 RSVPs</li><li class="dinnerItem"><a href="http://www.nerddinner.com/7695">Diwali party</a><br><strong>Oct 23</strong> with 2 RSVPs</li></div>
+		<a rel="feedurl" href="http://www.nerddinner.com/Dinners/WebSlicePopular" style="display:none;"></a>
+	</div>
+</div>
+
+<!--<script type="text/javascript">-->
+    <!--$(document).ready(function () {-->
+        <!--// make sure that the mapcontrol has loaded, this has been an issue in FF4-->
+        <!--// see http://stackoverflow.com/questions/5566393/issue-with-bing-map-p-elsource-attachevent-is-not-a-function-->
+        <!--var interval = setInterval(function () {-->
+            <!--if ((eval("typeof VEMap") != "undefined") && (document.getElementById("theMap").attachEvent != undefined)) {-->
+                <!--clearInterval(interval);-->
+                <!--onMapLoaded();-->
+            <!--}-->
+        <!--}, 10);-->
+    <!--});-->
+
+    <!--function onMapLoaded() {-->
+        <!--NerdDinner.LoadMap();-->
+
+        <!--Sys.Application.set_enableHistory(true);-->
+        <!--Sys.Application.add_navigate(OnNavigation);-->
+
+        <!--NerdDinner.ipInfoDbKey = '9742e62afd81cdbc5d814f735aa5e437ddb6b0b7f34d6c6f424be6e4320106f8';-->
+        <!--NerdDinner.BingMapsKey = 'Au24T_CderRB2l0rexU6WtGzWAS0gYV1pY2NjkY6Bf2vxV5y9TVYFpMFej6jFBmI';-->
+        <!--yepnope({-->
+            <!--test: Modernizr.geolocation,-->
+            <!--yep: '/Scripts/geo.js',-->
+            <!--nope: '/Scripts/geo-polyfill.js',-->
+            <!--callback: function (url, result, key) {-->
+                <!--OnNavigation();-->
+            <!--}-->
+        <!--});-->
+    <!--}-->
+
+    <!--function OnNavigation(sender, args) {-->
+        <!--if (Sys.Application.get_stateString() === '') {-->
+            <!--$get('Location').value = '';-->
+            <!--NerdDinner.FindMostPopularDinners(8);-->
+
+            <!--getCurrentLocation();-->
+        <!--}-->
+        <!--else {-->
+            <!--var where = Sys.Application._state.where;-->
+
+            <!--$get('Location').value = where;-->
+            <!--NerdDinner.FindDinnersGivenLocation(where);-->
+        <!--}-->
+    <!--}-->
+<!--</script>-->
+
+        </div>
+        <footer>
+            Code by <a href="http://www.hanselman.com/">Hanselman</a>, <a href="http://weblogs.asp.net/scottgu">
+                Guthrie</a>, <a href="http://weblogs.asp.net/jgalloway">Galloway</a>, <a href="http://mourfield.com/">
+                    Mourfield</a>,<a href="http://www.johnvpetersen.com/"> Petersen</a>  and <a href="http://blog.nerdbank.net/">Arnott</a>. JavaScript
+            by <a href="http://encosia.com/">Dave Ward</a>. ASP.NET MVC by <a href="http://www.haacked.com/">
+                Haack</a> and friends. Style by <a href="http://michaeldorian.com/">Michael Dorian Bach</a>.<br>
+            Source Code at <a href="http://nerddinner.codeplex.com/">http://nerddinner.codeplex.com</a>.
+            Free Sample Book Chapter and code walkthrough at <a href="http://tinyurl.com/aspnetmvc">
+                http://tinyurl.com/aspnetmvc</a>.
+        </footer>
+        <script type="text/javascript">
+            var pageTracker = _gat._getTracker("UA-6399325-1");
+            pageTracker._initData();
+            pageTracker._trackPageview();
+        </script>
+
+
+
+        <script type="text/javascript">
+            UserVoice.Tab.show({
+                key: 'nerddinner',
+                host: 'feedback.nerddinner.com',
+                forum: 'general',
+                alignment: 'right', /* 'left', 'right' */
+                background_color: '#A2CC3B',
+                text_color: 'white', /* 'white', 'black' */
+                hover_color: '#7A0100',
+                lang: 'en' /* 'en', 'de', 'nl', 'es', 'fr' */
+            });
+        </script>
+
+
+
+</div><div class="profiler-results left"><div class="profiler-result">      <div class="profiler-button " style="display: block;">            <span class="number">         8.3 <span class="unit">ms</span>       </span>     </div>      <div class="profiler-popup">       <div class="info">         <span class="name">           Home/Index <span class="overall-duration">(8.3 ms)</span>         </span>         <span class="server-time">HANSELMAN on Thu, 23 Apr 2015 00:08:10 GMT</span>       </div>       <div class="profiler-output">         <table class="timings">           <thead>             <tr>               <th></th>               <th>duration (ms)</th>               <th class="duration-with-children">with children (ms)</th>               <th class="time-from-start">from start (ms)</th>                          </tr>           </thead>           <tbody>             <tr class="" data-timing-id="755503a8-57d3-4062-9300-0557f6e62f7a">     <td class="label" title="">       <span class="indent"></span> http://www.nerddinner.com:80/     </td>     <td class="duration" title="duration of this step without any children&#39;s durations">       4.5     </td>     <td class="duration duration-with-children" title="duration of this step and its children">       8.3     </td>     <td class="duration time-from-start" title="time ellapsed since profiling started">       <span class="unit">+</span>0.0     </td>        </tr>                <tr class="trivial" data-timing-id="a3b47275-cd7d-4d0d-a1f5-74ee52d840a0">     <td class="label" title="">       <span class="indent">&nbsp;</span> Controller: HomeController.Index     </td>     <td class="duration" title="duration of this step without any children&#39;s durations">       0.1     </td>     <td class="duration duration-with-children" title="duration of this step and its children">       0.1     </td>     <td class="duration time-from-start" title="time ellapsed since profiling started">       <span class="unit">+</span>4.1     </td>        </tr>                <tr class="trivial" data-timing-id="1e7f7b2b-9781-4a33-b746-e8aff31b58a7">     <td class="label" title="">       <span class="indent">&nbsp;</span> Find: Index     </td>     <td class="duration" title="duration of this step without any children&#39;s durations">       0.2     </td>     <td class="duration duration-with-children" title="duration of this step and its children">       0.2     </td>     <td class="duration time-from-start" title="time ellapsed since profiling started">       <span class="unit">+</span>4.3     </td>        </tr>                <tr class="trivial" data-timing-id="39213dbc-e80a-4946-8105-d2f1c09beafe">     <td class="label" title="">       <span class="indent">&nbsp;</span> Render : Index     </td>     <td class="duration" title="duration of this step without any children&#39;s durations">       1.7     </td>     <td class="duration duration-with-children" title="duration of this step and its children">       3.5     </td>     <td class="duration time-from-start" title="time ellapsed since profiling started">       <span class="unit">+</span>4.6     </td>        </tr>                <tr class="trivial" data-timing-id="ca659b85-0231-4529-afd8-191e365979ba">     <td class="label" title="">       <span class="indent">&nbsp;&nbsp;</span> Find: _LoginStatus     </td>     <td class="duration" title="duration of this step without any children&#39;s durations">       0.7     </td>     <td class="duration duration-with-children" title="duration of this step and its children">       0.7     </td>     <td class="duration time-from-start" title="time ellapsed since profiling started">       <span class="unit">+</span>5.5     </td>        </tr>                <tr class="trivial" data-timing-id="d297f8c0-4c0a-4521-89a0-428a7a7b77f2">     <td class="label" title="">       <span class="indent">&nbsp;&nbsp;</span> Render partial: _LoginStatus     </td>     <td class="duration" title="duration of this step without any children&#39;s durations">       0.2     </td>     <td class="duration duration-with-children" title="duration of this step and its children">       0.2     </td>     <td class="duration time-from-start" title="time ellapsed since profiling started">       <span class="unit">+</span>6.3     </td>        </tr>                <tr class="trivial" data-timing-id="840c2ea0-e19a-4110-b005-91ee57c553b3">     <td class="label" title="">       <span class="indent">&nbsp;&nbsp;</span> Find: _Masthead     </td>     <td class="duration" title="duration of this step without any children&#39;s durations">       0.7     </td>     <td class="duration duration-with-children" title="duration of this step and its children">       0.7     </td>     <td class="duration time-from-start" title="time ellapsed since profiling started">       <span class="unit">+</span>7.1     </td>        </tr>                <tr class="trivial" data-timing-id="a306d1f6-227b-46ed-a515-53816e9a764c">     <td class="label" title="">       <span class="indent">&nbsp;&nbsp;</span> Render partial: _Masthead     </td>     <td class="duration" title="duration of this step without any children&#39;s durations">       0.2     </td>     <td class="duration duration-with-children" title="duration of this step and its children">       0.2     </td>     <td class="duration time-from-start" title="time ellapsed since profiling started">       <span class="unit">+</span>7.9     </td>        </tr>                               </tbody>           <tfoot>             <tr>               <td colspan="3">                 <a href="http://www.nerddinner.com/mini-profiler-results?id=b360671d-c061-40e8-94d0-abe7490c57c4" class="share-profiler-results" target="_blank">share</a>                                <a class="toggle-trivial" data-show-on-load="false" title="toggles any rows with &lt; 2 ms">                    show trivial                  </a>                                <a class="toggle-duration-with-children" title="toggles column with aggregate child durations">show time with children</a>               </td>                          </tr>           </tfoot>         </table>       </div>     </div>        </div><div class="profiler-result">      <div class="profiler-button " style="display: block;">            <span class="number">         56.7 <span class="unit">ms</span>       </span>     </div>      <div class="profiler-popup">       <div class="info">         <span class="name">           Search/GetMostPopularDinners <span class="overall-duration">(56.7 ms)</span>         </span>         <span class="server-time">HANSELMAN on Thu, 23 Apr 2015 00:08:11 GMT</span>       </div>       <div class="profiler-output">         <table class="timings">           <thead>             <tr>               <th></th>               <th>duration (ms)</th>               <th class="duration-with-children">with children (ms)</th>               <th class="time-from-start">from start (ms)</th>                            <th colspan="2">query time (ms)</th>                          </tr>           </thead>           <tbody>             <tr class="" data-timing-id="ef966876-5d3b-47f7-8c15-ee4679a74e00">     <td class="label" title="http://www.nerddinner.com:80/Search/GetMostPopularDinners">       <span class="indent"></span> http://www.nerddinner.com:80/Search/GetMostPopularDinners     </td>     <td class="duration" title="duration of this step without any children&#39;s durations">       7.9     </td>     <td class="duration duration-with-children" title="duration of this step and its children">       56.7     </td>     <td class="duration time-from-start" title="time ellapsed since profiling started">       <span class="unit">+</span>0.0     </td>        </tr>                <tr class="" data-timing-id="accd3da1-af2b-4470-afc3-1f596fc1c2fe">     <td class="label" title="Controller: SearchController.GetMostPopularDinners">       <span class="indent">&nbsp;</span> Controller: SearchController.GetMostPopularDinners     </td>     <td class="duration" title="duration of this step without any children&#39;s durations">       48.8     </td>     <td class="duration duration-with-children" title="duration of this step and its children">       48.8     </td>     <td class="duration time-from-start" title="time ellapsed since profiling started">       <span class="unit">+</span>6.5     </td>         <td class="duration " title="1 reader, 0 scalar, 0 non-query statements executed">       <a class="queries-show">                  1 <span class="unit">sql</span>       </a>     </td>     <td class="duration" title="aggregate duration of all queries in this step (excludes children)">       29.8     </td>       </tr>                       </tbody>           <tfoot>             <tr>               <td colspan="3">                 <a href="http://www.nerddinner.com/mini-profiler-results?id=e9cf9ad9-186a-4e88-9a2c-e119b50ef689" class="share-profiler-results" target="_blank">share</a>                                <a class="toggle-duration-with-children" title="toggles column with aggregate child durations">show time with children</a>               </td>                            <td colspan="2" class="number percent-in-sql" title="percentage of total time spent executing sql">                 52.6                 <span class="unit">% in sql</span>               </td>                          </tr>           </tfoot>         </table>       </div>     </div>         <div class="profiler-queries">       <table>       <thead>         <tr>           <th style="text-align:right">step<br>time from start<br>query type<br>duration</th>           <th style="text-align:left">call stack<br>query</th>         </tr>       </thead>       <tbody>                    <tr class="" data-timing-id="accd3da1-af2b-4470-afc3-1f596fc1c2fe">     <td class="info">       <div>Controller: SearchController.GetMostPopularDinners</div>       <div class="number"><span class="unit">T+</span>25.5 <span class="unit">ms</span></div>       <div>                  Reader       </div>       <div>29.8 <span class="unit">ms</span></div>     </td>     <td>       <div class="query">         <pre class="stack-trace">ExecuteStoreCommands Execute GetResults System.Collections.Generic.IEnumerable&lt;T&gt;.GetEnumerator GetEnumerator System.Collections.Generic.IEnumerable&lt;TResult&gt;.GetEnumerator</pre>         <pre class="prettyprint lang-sql"><code>SELECT
+[Project2].[DinnerID] AS [DinnerID], 
+[Project2].[Title] AS [Title], 
+[Project2].[EventDate] AS [EventDate], 
+[Project2].[Description] AS [Description], 
+[Project2].[HostedBy] AS [HostedBy], 
+[Project2].[ContactPhone] AS [ContactPhone], 
+[Project2].[Address] AS [Address], 
+[Project2].[Country] AS [Country], 
+[Project2].[Latitude] AS [Latitude], 
+[Project2].[Longitude] AS [Longitude], 
+[Project2].[HostedById] AS [HostedById], 
+[Project2].[C1] AS [C1], 
+[Project2].[RsvpID] AS [RsvpID], 
+[Project2].[DinnerID1] AS [DinnerID1], 
+[Project2].[AttendeeName] AS [AttendeeName], 
+[Project2].[AttendeeNameId] AS [AttendeeNameId]
+FROM ( SELECT 
+	[Limit1].[DinnerID] AS [DinnerID], 
+	[Limit1].[Title] AS [Title], 
+	[Limit1].[EventDate] AS [EventDate], 
+	[Limit1].[Description] AS [Description], 
+	[Limit1].[HostedBy] AS [HostedBy], 
+	[Limit1].[ContactPhone] AS [ContactPhone], 
+	[Limit1].[Address] AS [Address], 
+	[Limit1].[Country] AS [Country], 
+	[Limit1].[Latitude] AS [Latitude], 
+	[Limit1].[Longitude] AS [Longitude], 
+	[Limit1].[HostedById] AS [HostedById], 
+	[Extent3].[RsvpID] AS [RsvpID], 
+	[Extent3].[DinnerID] AS [DinnerID1], 
+	[Extent3].[AttendeeName] AS [AttendeeName], 
+	[Extent3].[AttendeeNameId] AS [AttendeeNameId], 
+	CASE WHEN ([Extent3].[RsvpID] IS NULL) THEN CAST(NULL AS int) ELSE 1 END AS [C1], 
+	[Limit1].[C1] AS [C2]
+	FROM   (SELECT TOP (8) [Project1].[DinnerID] AS [DinnerID], [Project1].[Title] AS [Title], [Project1].[EventDate] AS [EventDate], [Project1].[Description] AS [Description], [Project1].[HostedBy] AS [HostedBy], [Project1].[ContactPhone] AS [ContactPhone], [Project1].[Address] AS [Address], [Project1].[Country] AS [Country], [Project1].[Latitude] AS [Latitude], [Project1].[Longitude] AS [Longitude], [Project1].[HostedById] AS [HostedById], [Project1].[C1] AS [C1]
+		FROM ( SELECT 
+			[Extent1].[DinnerID] AS [DinnerID], 
+			[Extent1].[Title] AS [Title], 
+			[Extent1].[EventDate] AS [EventDate], 
+			[Extent1].[Description] AS [Description], 
+			[Extent1].[HostedBy] AS [HostedBy], 
+			[Extent1].[ContactPhone] AS [ContactPhone], 
+			[Extent1].[Address] AS [Address], 
+			[Extent1].[Country] AS [Country], 
+			[Extent1].[Latitude] AS [Latitude], 
+			[Extent1].[Longitude] AS [Longitude], 
+			[Extent1].[HostedById] AS [HostedById], 
+			(SELECT 
+				COUNT(1) AS [A1]
+				FROM [dbo].[RSVP] AS [Extent2]
+				WHERE [Extent1].[DinnerID] = [Extent2].[DinnerID]) AS [C1]
+			FROM [dbo].[Dinners] AS [Extent1]
+			WHERE [Extent1].[EventDate] &gt;= (SysDateTime())
+		)  AS [Project1]
+		ORDER BY [Project1].[C1] DESC ) AS [Limit1]
+	LEFT OUTER JOIN [dbo].[RSVP] AS [Extent3] ON [Limit1].[DinnerID] = [Extent3].[DinnerID]
+)  AS [Project2]
+ORDER BY [Project2].[C2] DESC, [Project2].[DinnerID] ASC, [Project2].[C1] ASC   </code></pre>       </div>     </td>   </tr>                </tbody>       </table>     </div>       </div></div><script id="profilerTemplate" type="text/x-jquery-tmpl">
+
+  <div class="profiler-result">
+
+    <div class="profiler-button {{if HasDuplicateSqlTimings}}warning{{/if}}">
+    {{if HasDuplicateSqlTimings}}<span class="nuclear">!</span>{{/if}}
+      <span class="number">
+        ${MiniProfiler.formatDuration(DurationMilliseconds)} <span class="unit">ms</span>
+      </span>
+    </div>
+
+    <div class="profiler-popup">
+      <div class="info">
+        <span class="name">
+          ${Name} <span class="overall-duration">(${MiniProfiler.formatDuration(DurationMilliseconds)} ms)</span>
+        </span>
+        <span class="server-time">${MachineName} on ${MiniProfiler.renderDate(Started)}</span>
+      </div>
+      <div class="profiler-output">
+        <table class="timings">
+          <thead>
+            <tr>
+              <th></th>
+              <th>duration (ms)</th>
+              <th class="duration-with-children">with children (ms)</th>
+              <th class="time-from-start">from start (ms)</th>
+            {{if HasSqlTimings}}
+              <th colspan="2">query time (ms)</th>
+            {{/if}}
+            </tr>
+          </thead>
+          <tbody>
+            {{tmpl(Root) "#timingTemplate"}}
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3">
+                <a href="${MiniProfiler.shareUrl(Id)}" class="share-profiler-results" target="_blank">share</a>
+              {{if HasTrivialTimings}}
+                <a class="toggle-trivial" data-show-on-load="${HasAllTrivialTimings}" title="toggles any rows with &lt; ${TrivialDurationThresholdMilliseconds} ms">
+                   show trivial
+                 </a>
+              {{/if}}
+                <a class="toggle-duration-with-children" title="toggles column with aggregate child durations">show time with children</a>
+              </td>
+            {{if HasSqlTimings}}
+              <td colspan="2" class="number percent-in-sql" title="percentage of total time spent executing sql">
+                ${MiniProfiler.formatDuration(DurationMillisecondsInSql / DurationMilliseconds * 100)}
+                <span class="unit">% in sql</span>
+              </td>
+            {{/if}}
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+
+  {{if HasSqlTimings}}
+    <div class="profiler-queries">
+      <table>
+      <thead>
+        <tr>
+          <th style="text-align:right">step<br />time from start<br />query type<br />duration</th>
+          <th style="text-align:left">call stack<br />query</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{each(i, s) MiniProfiler.getSqlTimings(Root)}}
+          {{tmpl({ i:i, s:s }) "#sqlTimingTemplate"}}
+        {{/each}}
+      </tbody>
+      </table>
+    </div>
+  {{/if}}
+
+  </div>
+
+</script>
+
+<script id="timingTemplate" type="text/x-jquery-tmpl">
+
+  <tr class="{{if IsTrivial }}trivial{{/if}}" data-timing-id="${Id}">
+    <td class="label" title="{{if Name && Name.length > 45 }}${Name}{{/if}}">
+      <span class="indent">${MiniProfiler.renderIndent(Depth)}</span> ${Name}
+    </td>
+    <td class="duration" title="duration of this step without any children's durations">
+      ${MiniProfiler.formatDuration(DurationWithoutChildrenMilliseconds)}
+    </td>
+    <td class="duration duration-with-children" title="duration of this step and its children">
+      ${MiniProfiler.formatDuration(DurationMilliseconds)}
+    </td>
+    <td class="duration time-from-start" title="time ellapsed since profiling started">
+      <span class="unit">+</span>${MiniProfiler.formatDuration(StartMilliseconds)}
+    </td>
+
+  {{if HasSqlTimings}}
+    <td class="duration {{if HasDuplicateSqlTimings}}warning{{/if}}" title="{{if HasDuplicateSqlTimings}}duplicate queries detected - {{/if}}${ExecutedReaders} reader, ${ExecutedScalars} scalar, ${ExecutedNonQueries} non-query statements executed">
+      <a class="queries-show">
+        {{if HasDuplicateSqlTimings}}<span class="nuclear">!</span>{{/if}}
+        ${SqlTimings.length} <span class="unit">sql</span>
+      </a>
+    </td>
+    <td class="duration" title="aggregate duration of all queries in this step (excludes children)">
+      ${MiniProfiler.formatDuration(SqlTimingsDurationMilliseconds)}
+    </td>
+  {{/if}}
+
+  </tr>
+
+  {{if HasChildren}}
+    {{each Children}}
+      {{tmpl($value) "#timingTemplate"}}
+    {{/each}}
+  {{/if}}
+
+</script>
+
+<script id="sqlTimingTemplate" type="text/x-jquery-tmpl">
+
+  <tr class="{{if i % 2 == 1}}odd{{/if}}" data-timing-id="${s.ParentTimingId}">
+    <td class="info">
+      <div>${s.ParentTimingName}</div>
+      <div class="number"><span class="unit">T+</span>${MiniProfiler.formatDuration(s.StartMilliseconds)} <span class="unit">ms</span></div>
+      <div>
+        {{if s.IsDuplicate}}<span class="warning">DUPLICATE</span>{{/if}}
+        ${MiniProfiler.renderExecuteType(s.ExecuteType)}
+      </div>
+      <div>${MiniProfiler.formatDuration(s.DurationMilliseconds)} <span class="unit">ms</span></div>
+    </td>
+    <td>
+      <div class="query">
+        <pre class="stack-trace">${s.StackTraceSnippet}</pre>
+        <pre class="prettyprint lang-sql"><code>${s.FormattedCommandString}   </code></pre>
+      </div>
+    </td>
+  </tr>
+
+</script><div id="MSVE_navAction_palette"></div><div id="MSVE_navAction_palette"></div><div class="ero ero-leftBeak" style="visibility: hidden;"><div class="ero-shadow"><div class="ero-body"><div class="ero-actionsBackground"><div class="ero-previewArea"></div><div class="ero-actions"><ul></ul></div><div class="ero-paddingHack"></div></div></div></div><div class="ero-beak"></div></div><div class="ero-progressAnimation" style="visibility: hidden;"></div><div id="help" class="VE_Panel_el" style="z-index: 31; top: 0px; left: 0px; display: none;"><a id="help_title" class="VE_Panel_title" href="http://www.nerddinner.com/#"><span>Help</span></a><a id="help_cb" class="VE_Panel_cb VE_Panel_cb_blue" href="http://www.nerddinner.com/#" style="z-index: 32;"></a><div id="help_tb" class="toolbar" style="z-index: 32; display: none;"></div><div id="help_body" class="VE_Panel_body_help" style="z-index: 32;"><iframe id="helpFrame" src="about:blank" width="100%" height="100%" allowtransparency="true" frameborder="0"></iframe></div><div id="help_foot" class="VE_Panel_foot VE_Panel_foot_blue" style="z-index: 32; display: none;"></div></div></body></html>
