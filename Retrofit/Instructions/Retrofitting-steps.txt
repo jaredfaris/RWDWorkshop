@@ -65,3 +65,8 @@ Note: The numbering in this document matches the folder structure differently th
                 display: inline-block;
             }
         }
+
+
+03) That's it for examples. Take a look at the "Enter your location" bubble, the "Popular Dinners" list, and anything
+    else on the page that breaks. There's not one correct way to retrofit a site so experiment and see what you think
+    works best. Cheers!
