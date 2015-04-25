@@ -1,0 +1,13 @@
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.logo {
+  float: left;
+}
+
+.main-navigation {
+  float: right;
+}

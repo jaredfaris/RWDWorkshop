@@ -18,7 +18,6 @@ body {
 
 .main-site-header {
   width: 100%;
-  height: 50px;
   background: #333333;
   margin-bottom: 60px;
   padding-top: 10px;
@@ -30,6 +29,7 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  margin-bottom: 10px;
 }
 
 .main-navigation {
@@ -76,10 +76,38 @@ td {
   font-size: 12px;
 }
 
+.grid-item {
+  margin-bottom: 32px;
+}
+
+@media screen and (min-width: 600px) {
+  .grid-item {
+    width: 48%;
+    float: left;
+    margin-right: 4%;
+  }
+
+  .grid-item:nth-child(2n+2) {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .grid-item, .grid-item:nth-child(2n+2) {
+    width: 23.5%;
+    margin-right: 2%;
+  }
+
+  .grid-item:last-child {
+    margin-right: 0;
+  }
+}
+
 .main-site-footer {
   background: #f3f3f3;
   border-radius: 4px;
   padding: 20px;
+  margin-bottom: 12px;
 }
 
 button {

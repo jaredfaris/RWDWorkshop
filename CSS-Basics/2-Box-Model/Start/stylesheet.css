@@ -1,0 +1,62 @@
+body {
+  font-family: "helvetica", sans-serif;
+  font-size: 14px;
+  color: #333333;
+}
+
+.main-site-header {
+  background: #333333;
+}
+
+.logo {
+  background: white;
+}
+
+.main-navigation a {
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+th {
+  color: #77C75F;
+}
+
+tr:nth-child(even) {
+  background: #f3f3f3;
+}
+
+th, td {
+  text-align: left;
+}
+
+td {
+  font-size: 12px;
+}
+
+.main-site-footer {
+  background: #f3f3f3;
+  border-radius: 4px;
+}
+
+button {
+  color: white;
+  cursor: pointer;
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+
+.primary-button {
+  text-shadow: 0 1px 1px #62BE45;
+  background: #77C75F;
+}
+
+.seconday-button {
+  text-shadow: 0 1px 1px black;
+  background: #333333;
+}
