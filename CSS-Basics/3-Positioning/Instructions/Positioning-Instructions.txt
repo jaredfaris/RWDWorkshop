@@ -1,13 +1,29 @@
-.clearfix::after {
-  clear: both;
-  content: "";
-  display: table;
-}
+We want our logo to float to the left of the header and the navigation to float to the right.
 
-.logo {
-  float: left;
-}
+1) Add styles for the logo element and main-navigation element (identified by classes) to tell them how to float. Put
+  these styles in stylesheet.css.
 
-.main-navigation {
-  float: right;
-}
+  .logo {
+    float: left;
+  }
+
+  .main-navigation {
+    float: right;
+  }
+
+
+2) Notice that they no longer display. The parent container doesn't understand how tall the contents are now because of
+  how they are floated. There is a common fix for this known as "clearfix" that we can apply. Add this to stylesheet.css
+
+  .clearfix::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+
+  Also, add clearfix to the main site header like this:
+
+      <header class="main-site-header">
+        <div class="container clearfix">  <--- HERE
+
+  Notice how the container is now tall enough to house all of it's children

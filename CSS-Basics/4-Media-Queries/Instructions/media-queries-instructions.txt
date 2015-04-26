@@ -1,34 +1,45 @@
-@media screen and (min-width: 600px) {
-  .grid-item {
-    width: 48%;
-    float: left;
-    margin-right: 4%;
-  }
+We can now start thinking about how we want items to render on various screen sizes.
 
-  .grid-item:nth-child(2n+2) {
-    margin-right: 0;
-  }
-}
+1) At above a 600px wide window, we'd like the grid items to show up 2 per row. We can do this by creating a media query
+  that specifies this. Add this to your stylesheet.css file. Placing these styles near their corresponding non-media query
+  elements will help make them easier to find.
 
-@media screen and (min-width: 768px) {
-  .grid-item, .grid-item:nth-child(2n+2) {
-    width: 23.5%;
-    margin-right: 2%;
-  }
+    @media screen and (min-width: 600px) {
+      .grid-item {
+        width: 48%;
+        float: left;
+        margin-right: 4%;
+      }
 
-  .grid-item:last-child {
-    margin-right: 0;
-  }
-}
+      .grid-item:nth-child(2n+2) {
+        margin-right: 0;
+      }
+    }
 
-@media screen and (min-width: 600px) {
-  footer button {
-    width: 49%;
-    float: left;
-    margin-bottom: 0;
-  }
+2) On a wider device, we can go to 4 items on a row. This media query will allow for that to happen. Place it in your
+  stylesheet.css file.
 
-  footer button:first-child {
-    margin-right: 2%;
-  }
-}
+    @media screen and (min-width: 768px) {
+      .grid-item, .grid-item:nth-child(2n+2) {
+        width: 23.5%;
+        margin-right: 2%;
+      }
+
+      .grid-item:last-child {
+        margin-right: 0;
+      }
+    }
+
+3) We may also want the buttons in the footer to be side by side on a larger screen. Let's do the same thing here.
+
+    @media screen and (min-width: 600px) {
+      footer button {
+        width: 49%;
+        float: left;
+        margin-bottom: 0;
+      }
+
+      footer button:first-child {
+        margin-right: 2%;
+      }
+    }

@@ -1,75 +1,81 @@
-.container {
-  margin: auto;
-  width: 96%;
-  max-width: 960px;
-}
+We want to include some basic styles to give elements padding/margins, basic widths (not for positioning!), and
+generally get individual components looking OK on their own.
 
-.main-site-header {
-  width: 100%;
-  margin-bottom: 60px;
-  padding-top: 10px;
-}
+1) Copy the following into stylesheet.css. Replace the entire file contents with the styles below. Read through the styles
+  and consider adding them one at a time if it's not obvious what they are doing.
 
-.logo {
-  width: 40px;
-  height: 40px;
-  margin-bottom: 10px;
-}
+  .container {
+    margin: auto;
+    width: 96%;
+    max-width: 960px;
+  }
 
-.main-navigation {
-  margin-top: 14px;
-}
+  .main-site-header {
+    width: 100%;
+    margin-bottom: 60px;
+    padding-top: 10px;
+  }
 
-.main-navigation a {
-  border: 1px solid white;
-  padding: 6px 12px;
-  padding-top: 9px;
-  margin-left: 12px;
-}
+  .logo {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+  }
 
-table {
-  width: 100%;
-  margin-bottom: 60px;
-}
+  .main-navigation {
+    margin-top: 14px;
+  }
 
-th {
-  border-bottom: 1px solid #efefef;
-}
+  .main-navigation a {
+    border: 1px solid white;
+    padding: 6px 12px;
+    padding-top: 9px;
+    margin-left: 12px;
+  }
 
-td, th {
-  padding: 10px 6px;
-  padding-top: 12px;
-}
+  table {
+    width: 100%;
+    margin-bottom: 60px;
+  }
 
-.grid-item {
-  margin-bottom: 32px;
-}
+  th {
+    border-bottom: 1px solid #efefef;
+  }
 
-.main-site-footer {
-  padding: 20px;
-  margin-bottom: 12px;
-}
+  td, th {
+    padding: 10px 6px;
+    padding-top: 12px;
+  }
 
-button {
-  margin: auto;
-  padding: 14px 21px;
-  padding-top: 16px;
-}
+  .grid-item {
+    margin-bottom: 32px;
+  }
 
-footer button {
-  width: 100%;
-  margin-bottom: 20px;
-}
+  .main-site-footer {
+    padding: 20px;
+    margin-bottom: 12px;
+  }
 
-footer button:last-child {
-  margin-bottom: 0;
-}
+  button {
+    margin: auto;
+    padding: 14px 21px;
+    padding-top: 16px;
+  }
 
-.primary-button {
-  border: 1px solid #62BE45;
-}
+  footer button {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 
-.seconday-button {
-  background: #333333;
-  border: 1px solid black;
-}
+  footer button:last-child {
+    margin-bottom: 0;
+  }
+
+  .primary-button {
+    border: 1px solid #62BE45;
+  }
+
+  .seconday-button {
+    background: #333333;
+    border: 1px solid black;
+  }

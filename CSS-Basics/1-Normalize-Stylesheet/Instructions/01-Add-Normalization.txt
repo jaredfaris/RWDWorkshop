@@ -1,0 +1,8 @@
+Browsers can do odd (or at least different) things to rendered CSS. On top of that, standard default behaviors may conflict
+with what you want to accomplish on a site. A common first step in any project is to add a reset/normalizing file to
+get all of the basic styles in place.
+
+1) Add a new stylesheet in the <head> tags of the website. You can find this file in the Instructions folder.
+
+
+    <link href="normalize.css" media="all" rel="stylesheet">
