@@ -1,8 +1,7 @@
 We want to include some basic styles to give elements padding/margins, basic widths (not for positioning!), and
 generally get individual components looking OK on their own.
 
-1) Copy the following into stylesheet.css. Replace the entire file contents with the styles below. Read through the styles
-  and consider adding them one at a time if it's not obvious what they are doing.
+1) Copy the following into stylesheet.css. You can add these to their existing classes, or add these styles to the bottom of our existing css. Read through the styles and consider adding them one at a time if it's not obvious what they are doing.
 
   .container {
     margin: auto;
