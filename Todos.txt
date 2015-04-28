@@ -1,0 +1,6 @@
+Build out the retrofitting example, with and without Bootstrap
+Remove the focus on Bootstrap controls in the Responsive examples
+
+Fix the reference to the "inventory" folder on the deskop in Responsive > 1
+Fix the incorrect number of images referenced in Responsive > 1
+Generally, update Responsive > 1 to have the boilerplate in place so people are spending less time creating folder structures
